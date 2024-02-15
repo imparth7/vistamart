@@ -15,29 +15,54 @@ Vista Mart is a full-fledged online store built with the MERN stack (MongoDB, Ex
 
 ## Technologies Used:
 
-Frontend: `React.js`
-Backend: `Node.js`, `Express.js`
-Database: `MongoDB`
-Additional Tools: (e.g., ESLint, Prettier, testing frameworks)
+Frontend: `React.js`\
+Backend: `Node.js`, `Express.js`\
+Database: `MongoDB`\
+Additional Tools: (e.g., ESLint, Prettier, testing frameworks)\
 
 ## Installation:
 
-Clone this repository: `git clone https://github.com/imparth7/vistamart.git`
-Install dependencies: `npm install (or yarn install)`
-Configure database connection: Update .env file with your MongoDB connection details.
-Start the development server: npm run dev (or yarn start)
+Clone this repository: `git clone https://github.com/imparth7/vistamart.git`\
+Install dependencies: `npm install (or yarn install)`\
+Configure database connection: Update .env file with your MongoDB connection details.\
+Start the development server: npm run dev (or yarn start)\
 
 ## Usage:
 
-Access the application at http://localhost:5173 in your browser.
+Access the application at http://localhost:5173 in your browser.\
 Explore features, create test accounts, and add sample products.
 
 ## Development:
 
-Start client side and server side dev mode using: `npm run dev`
-You need nodemon to run dev mode in server side.
-Feel free to fork repository and add star to the project.
+Start client side and server side dev mode using: `npm run dev`\
+You need nodemon to run dev mode in server side.\
+Feel free to fork repository and add star to the project.\
 
-## Additional Notes:
+## Project Showcase:
 
-Consider including screenshots, GIFs, or a demo video to showcase the project's functionality.
+#### Signin Page
+![Signin Page](https://github.com/imparth7/vistamart/blob/master/Assets/Signin.png?raw=true)
+
+#### User Registered
+![User Registration notification on Home Page](https://github.com/imparth7/vistamart/blob/master/Assets/UserRegister.png?raw=true)
+
+#### Login Page
+![Login Page](https://github.com/imparth7/vistamart/blob/master/Assets/Login.png?raw=true)
+
+#### User Logedin
+![User Login notification on Home Page](https://github.com/imparth7/vistamart/blob/master/Assets/UserLogin.png?raw=true)
+
+#### Home Page
+![Home Page](https://github.com/imparth7/vistamart/blob/master/Assets/HomePage.png?raw=true)
+
+#### Add Product Page
+![New Product Add Page](https://github.com/imparth7/vistamart/blob/master/Assets/AddProduct.png?raw=true)
+
+#### Shop / Products Added Page
+![New Product Added to Shop and Notification](https://github.com/imparth7/vistamart/blob/master/Assets/ShopProductAdded.png?raw=true)
+
+#### Update Product Page
+![Product Update Page](https://github.com/imparth7/vistamart/blob/master/Assets/UpdateProduct.png?raw=true)
+
+#### Shop / Products Updated Page
+![Product Updated and Notification](https://github.com/imparth7/vistamart/blob/master/Assets/ShopProductUpdated.png?raw=true)
