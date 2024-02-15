@@ -15,17 +15,17 @@ Vista Mart is a full-fledged online store built with the MERN stack (MongoDB, Ex
 
 ## Technologies Used:
 
-Frontend: `React.js`\
-Backend: `Node.js`, `Express.js`\
-Database: `MongoDB`\
-Additional Tools: (e.g., ESLint, Prettier, testing frameworks)\
+- Frontend: React.js
+- Backend: Node.js, Express.js
+- Database: MongoDB
+- Additional Tools: (e.g., ESLint, Prettier, testing frameworks)
 
 ## Installation:
 
 Clone this repository: `git clone https://github.com/imparth7/vistamart.git`\
 Install dependencies: `npm install (or yarn install)`\
 Configure database connection: Update .env file with your MongoDB connection details.\
-Start the development server: npm run dev (or yarn start)\
+Start the development server: npm run dev (or yarn start)
 
 ## Usage:
 
@@ -36,7 +36,7 @@ Explore features, create test accounts, and add sample products.
 
 Start client side and server side dev mode using: `npm run dev`\
 You need nodemon to run dev mode in server side.\
-Feel free to fork repository and add star to the project.\
+Feel free to fork repository and add star to the project.
 
 ## Project Showcase:
 
