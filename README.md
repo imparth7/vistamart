@@ -49,7 +49,7 @@ Feel free to fork repository and add star to the project.\
 #### Login Page
 ![Login Page](https://github.com/imparth7/vistamart/blob/master/Assets/Login.png?raw=true)
 
-#### User Logedin
+#### User Loggedin
 ![User Login notification on Home Page](https://github.com/imparth7/vistamart/blob/master/Assets/UserLogin.png?raw=true)
 
 #### Home Page
