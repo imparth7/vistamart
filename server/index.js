@@ -13,7 +13,11 @@ const PORT = process.env.PORT
 app.use(express.json())
 
 // This is resolve cors error of client-side
-app.use(cors())
+app.use(cors({
+  origin: ["https://vistamart.vercel.app"],
+  methods: ["POST", "GET", "PUT", "PATCH", "DELETE"],
+  credentials: true,
+}))
 
 // UserRouter
 const UserRouter = require('./routers/user')
