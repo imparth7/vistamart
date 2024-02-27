@@ -1,12 +1,13 @@
 const express = require('express');
 const cors = require('cors');
 const app = express()
+require('dotenv').config()
 
 // MongoDB Connection
 require('./db/conn')
 
 // Port
-const PORT = process.env.PORT | 8000
+const PORT = process.env.PORT
 
 // This is convert post json data to stringify data
 app.use(express.json())
