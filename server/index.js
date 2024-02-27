@@ -27,6 +27,7 @@ app.use(ProductRouter);
 
 // Root path
 app.get("/", (req, res) => {
+  res.write("<a href=`/king`>King</a>")
   res.send("Hello World!");
 })
 
