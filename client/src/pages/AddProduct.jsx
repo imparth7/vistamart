@@ -4,6 +4,7 @@ import { useForm } from 'react-hook-form';
 import { useNavigate } from 'react-router-dom';
 import { toast } from 'sonner';
 import { Image } from '@nextui-org/react';
+import { server } from '../components/Server';
 
 const AddProduct = () => {
 
@@ -33,7 +34,7 @@ const AddProduct = () => {
     }
     console.log(postData)
 
-    let res = await fetch('http://localhost:8000/addProduct', {
+    let res = await fetch(`${server}/addProduct`, {
       method: 'post',
       body: JSON.stringify(postData),
       headers: {
@@ -134,8 +135,14 @@ const AddProduct = () => {
                     <option value="Electronics">Electronics</option>
                     <option value="TV/Monitors">TV/Monitors</option>
                     <option value="Personal Computer">Personal Computer</option>
+                    <option value="Laptops">Laptops</option>
                     <option value="Gaming/Console">Gaming/Console</option>
-                    <option value="Phones">Phones</option>
+                    <option value="Smartphones">Smartphones</option>
+                    <option value="Tablets">Tablets</option>
+                    <option value="Cameras">Cameras</option>
+                    <option value="Headphones">Headphones</option>
+                    <option value="Speakers">Speakers</option>
+                    <option value="Printers">Printers</option>
                   </select>
                 </div>
                 <div className="sm:col-span-2">

@@ -4,6 +4,7 @@ import { useLocation } from 'react-router-dom';
 import { toast } from 'sonner';
 import { useForm } from 'react-hook-form';
 import { Card, CardBody, CardFooter, Image, Link } from '@nextui-org/react';
+import { server } from './components/Server';
 
 function App() {
   const location = useLocation();
@@ -23,7 +24,7 @@ function App() {
   }, [])
 
   const getData = async () => {
-    const res = await fetch('http://localhost:8000/products')
+    const res = await fetch(`${server}/products`)
     const resultData = await res.json()
     setAllProductsData(resultData.data)
     setProductsData(resultData.data)
@@ -34,7 +35,7 @@ function App() {
 
   const onSubmit = async (data) => {
     // console.log(data)
-    let res = await fetch(`http://localhost:8000/search/${data.key}`)
+    let res = await fetch(`${server}/search/${data.key}`)
     const result = await res.json();
     // console.warn(result.data);
     setProductsData(result.data);

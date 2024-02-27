@@ -4,6 +4,7 @@ import { Button, Link } from '@nextui-org/react';
 import { useLocation } from 'react-router-dom';
 import { toast } from 'sonner';
 import { useForm } from 'react-hook-form';
+import { server } from '../components/Server';
 
 const Shop = () => {
   const location = useLocation();
@@ -30,7 +31,7 @@ const Shop = () => {
       'userId': authUserObject._id
     }
 
-    const res = await fetch('http://localhost:8000/userProducts', {
+    const res = await fetch(`${server}/userProducts`, {
       method: 'post',
       body: JSON.stringify(userAuth),
       headers: {
@@ -45,7 +46,7 @@ const Shop = () => {
 
   const onSubmit = async (data) => {
     // console.log(data)
-    let res = await fetch(`http://localhost:8000/search/${authUserObject._id}/${data.key}`)
+    let res = await fetch(`${server}/search/${authUserObject._id}/${data.key}`)
     const result = await res.json();
     // console.warn(result.data);
     setProductsData(result.data);

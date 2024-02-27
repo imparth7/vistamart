@@ -2,6 +2,7 @@ import React, { useEffect } from 'react'
 import MainLayout from '../layout/MainLayout'
 import { useForm } from 'react-hook-form'
 import { useNavigate } from 'react-router-dom'
+import { server } from '../components/Server'
 
 const Signup = () => {
 
@@ -25,7 +26,7 @@ const Signup = () => {
       image: `https://robohash.org/${data.name}.png?size=250x250&set=set5`
     }
 
-    let res = await fetch('http://localhost:8000/register', {
+    let res = await fetch(`${server}/register`, {
       method: 'post',
       body: JSON.stringify(postData),
       headers: {

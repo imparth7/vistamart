@@ -2,6 +2,7 @@ import React, { useEffect } from 'react'
 import MainLayout from '../layout/MainLayout'
 import { useForm } from 'react-hook-form'
 import { useNavigate } from 'react-router-dom'
+import { server } from '../components/Server'
 
 const Login = () => {
 
@@ -23,7 +24,7 @@ const Login = () => {
       password: data.password
     }
 
-    let res = await fetch('http://localhost:8000/login', {
+    let res = await fetch(`${server}/login`, {
       method: 'post',
       body: JSON.stringify(postData),
       headers: {

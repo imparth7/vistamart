@@ -3,6 +3,7 @@ import MainLayout from '../layout/MainLayout'
 import { useForm } from 'react-hook-form';
 import { useNavigate, useParams } from 'react-router-dom';
 import { toast } from 'sonner';
+import { server } from './../components/Server';
 
 const UpdateProduct = () => {
 
@@ -11,7 +12,7 @@ const UpdateProduct = () => {
   const navigate = useNavigate();
   const { register, handleSubmit, watch, formState: { errors }, getValues } = useForm({
     defaultValues: async () => {
-      const res = await fetch(`http://localhost:8000/product/${params.id}`)
+      const res = await fetch(`${server}/product/${params.id}`)
       const data = await res.json()
       return data.data;
     }
@@ -35,7 +36,7 @@ const UpdateProduct = () => {
     }
     // console.log(postData)
 
-    let res = await fetch(`http://localhost:8000/product/${params.id}`, {
+    let res = await fetch(`${server}/product/${params.id}`, {
       method: 'put',
       body: JSON.stringify(postData),
       headers: {
@@ -52,7 +53,7 @@ const UpdateProduct = () => {
 
 
   const deleteProduct = async () => {
-    const res = await fetch(`http://localhost:8000/product/${params.id}`, {
+    const res = await fetch(`${server}/product/${params.id}`, {
       method: 'delete',
       headers: {
         'Content-Type': 'application/json',
